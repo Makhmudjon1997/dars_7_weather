@@ -15,7 +15,7 @@ async function getData(){
         const iconElement = document.createElement('img');
         iconElement.setAttribute('src', icon);
 
-        dateElement.textContent = element.dt
+        dateElement.textContent = new Date().getTime()
         tdDayElement.textContent = element.temp.day + ' C';
         tdNightElement.textContent = element.temp.night + ' C';
         tdWindElement.textContent = element.speed + ' km/s';
